@@ -1,0 +1,582 @@
+@font-face {
+    font-family: 'Baloo2-0';
+    src: url(/assets/fonts/Baloo_2/static/Baloo2-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Baloo2-1';
+    src: url(/assets/fonts/Baloo_2/Baloo2-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Fredoka-0';
+    src: url(/assets/fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: baloo2-0;
+}
+
+.go-up a {
+    color: #fff;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-family: 'baloo2-0';
+    text-decoration: none;
+    background: #00c3ff3d;
+    padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.1s ease-in;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.go-up a:hover {
+    background-color: #0f7999;
+    transform: scale(1.05);
+}
+
+/* ======================================== Header ======================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    font-family: baloo2-0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #0d0d0d;
+    height: 70px;
+    padding: 0 20px;
+    z-index: 9999;
+}
+
+.navbar h1 {
+    color: #ffffff;
+    cursor: pointer;
+    color: #00c2ff;
+    transition: all 0.5s ease;
+    min-width: max-content;
+}
+
+.navbar h1:hover {
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all ease-in-out 0.25s;
+}
+
+.navbar ul a:hover {
+    border-bottom: 1px solid #00c2ff;
+    padding-bottom: 5px;
+    color: #00c2ff;
+}
+
+.cta-btn {
+    position: relative;
+    text-decoration: none;
+    background: linear-gradient(135deg, #00c2ff, #ff5da2);
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    min-width: max-content;
+
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #00c2ff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.hamburger:hover {
+    color: #ffffff;
+}
+
+
+
+/* ======================================== Hero Section ======================================== */
+
+.hero-section {
+    height: 80vh;
+    background-image: url(/assets/images/hero-section.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(188, 158, 236);
+}
+
+.hero-section h1 {
+    font-family: 'Baloo2-1';
+    font-size: 52px;
+    color: #00c2ff;
+    margin: 0;
+}
+
+.hero-section h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo2-1';
+    font-size: 30px;
+    color: #00c3ffcb;
+}
+
+.hero-section p {
+    font-family: 'baloo2-0';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 80px;
+    color: #bbbbbb;
+}
+
+.btn {
+    position: relative;
+    font-family: 'baloo2-0';
+    text-decoration: none;
+    background: #00c3ff3d;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+    background-color: #0f7999;
+    /* transform: scale(1.05); */
+}
+
+/* ======================================== Features ======================================== */
+
+.features {
+    background-color: #0d1823;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    transition: all ease-in-out 0.5s;
+    animation: fadeIn 2s ease;
+}
+
+.features::picker {
+    background-color: #00c2ff;
+}
+
+
+.feature {
+    position: relative;
+    background-color: #223e50;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    border: 25px solid transparent;
+    border-top-color: #223e50;
+    border-bottom: 0;
+    margin-left: -10px;
+}
+
+
+.feature:hover {
+    transform: scale(1.05);
+    background-color: #1f3b4d;
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #00c2ff;
+}
+
+.feature h3 {
+    color: #00c2ff;
+}
+
+.feature p {
+    color: #ccc;
+}
+
+/* ======================================== About ======================================== */
+
+.about {
+    height: 100vh;
+    background-color: #080d17;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: max-content;
+}
+
+
+
+.about h1 {
+    color: #00c2ff;
+    font-size: 32px;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.maincontent p {
+    width: 60%;
+    max-width: 400px;
+    padding: 1rem;
+    color: #ccc;
+}
+
+/* ======================================== Contact ======================================== */
+
+.contact {
+    height: 100vh;
+    background-color: #0d1823;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 2s ease;
+    min-height: max-content;
+}
+
+.contact h1 {
+    color: #00c2ff;
+    font-size: 32px;
+}
+
+.contact .form-container {
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-family: baloo2-0;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+
+.input-box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 8px;
+}
+
+.input-field {
+    display: flex;
+    width: 100%;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    gap: 10px;
+    margin: 5px 0;
+    font-family: baloo2-1;
+    background: #080d17;
+    color: #00c2ff;
+    outline: none;
+    border: none;
+    border-bottom: solid 3px transparent;
+    transition: all ease-in-out 0.25s;
+}
+
+.input-box {
+    gap: 5px;
+    padding: 8px;
+}
+
+.input-box textarea {
+    text-align: start;
+    align-self: flex-start;
+    width: 100%;
+    font-size: 14px;
+    font-family: baloo2-1;
+    background: #080d17;
+    color: #00c2ff;
+    outline: none;
+    border: none;
+    border-bottom: solid 3px transparent;
+    transition: all ease-in-out 0.25s;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-bottom: 3px solid #00c2ff;
+}
+
+.btn-box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.btn-box input {
+    width: 30%;
+    outline: none;
+    border: none;
+    background-color: #1f3b4d;
+    cursor: pointer;
+}
+
+/* ======================================== Footer ======================================== */
+
+.footer {
+    background-color: #0d0d0d;
+    color: #ccc;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo h3 {
+    color: #00c2ff;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00c2ff;
+}
+
+.footer-social a {
+    color: #ccc;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #00c2ff;
+}
+
+.footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #222;
+    padding-top: 1rem;
+    color: #777;
+}
+
+/* ======================================== Responsive ======================================== */
+
+@media (max-width: 768px) {
+
+    /* Header Design */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbar ul {
+        display: none;
+        padding: 0;
+        flex-direction: column;
+        gap: 1px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        background-color: #00c2ff;
+        left: 0;
+        animation: hamburger 0.6s ease forwards;
+    }
+
+    .navbar ul.deActive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #00c2ff;
+        animation: deActivate 0.6s ease forwards;
+    }
+
+
+    @keyframes hamburger {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes deActivate {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+            display: none;
+        }
+    }
+
+    .navbar ul li {
+        padding: 5px;
+    }
+
+    .navbar ul li a {
+        padding-right: 100%;
+    }
+
+    .navbar ul li:hover {
+        background-color: #0d0d0d;
+        cursor: pointer;
+    }
+
+    .cta-btn {
+        display: none;
+    }
+
+    /* Hero Section Design */
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section h2 {
+        font-size: 20px;
+        color: #00c3ffcb;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    /* Features Design */
+
+
+    .feature {
+        padding: 5px;
+        margin: 20px;
+        max-width: 80%;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-size: 15px;
+    }
+
+    /* About Design */
+
+    .about {
+        padding: 1.5rem;
+        background-color: #080d17;
+    }
+
+
+    .about {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Contact Design */
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Footer Design */
+}
