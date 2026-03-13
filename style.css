@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Baloo2-0';
-    src: url(../assets/fonts/Baloo_2/static/Baloo2-Bold.ttf);
+    src: url(assets/fonts/Baloo_2/static/Baloo2-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Baloo2-1';
-    src: url(../assets/fonts/Baloo_2/Baloo2-VariableFont_wght.ttf);
+    src: url(assets/fonts/Baloo_2/Baloo2-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'Fredoka-0';
-    src: url(../assets/fonts/Indie_Flower/IndieFlower-Regular.ttf);
+    src: url(assets/fonts/Indie_Flower/IndieFlower-Regular.ttf);
 }
 
 html {
@@ -127,7 +127,7 @@ body {
 
 .hero-section {
     height: 80vh;
-    background-image: url(../assets/images/hero-section.png);
+    background-image: url(assets/images/hero-section.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
